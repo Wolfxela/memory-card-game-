@@ -59,7 +59,7 @@ function App() {
       {
         const response = await fetch('https://api.unsplash.com/photos/'+foxes[i]+'?&per_page=1&client_id=Iu5GAad-CByZs3FDLXvx6DYHbKe9SXUoJi8kwXyvXd4')
         const data = await response.json()
-        images.push({id:i,image:data.urls.full,clicked:false,text:"A cute fox"})
+        images.push({id:i,image:data.urls.small,clicked:false,text:"A cute fox"})
       }
       setCards(images)
     }
